@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <filter id="Rectangle_54" width="60" height="60" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-color="#303030" flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Group_485" transform="translate(-279 -169)">
+        <g filter="url(#Rectangle_54)" transform="translate(279 169)">
+            <rect id="Rectangle_54-2" width="30" height="30" fill="#2b8fff" rx="15" transform="translate(15 10)"/>
+        </g>
+        <g id="Group_202" transform="translate(293.523 70.294)">
+            <g id="Group_75" transform="translate(8.686 116.706)">
+                <g id="Group_74" transform="translate(11.753 11.945)">
+                    <path id="Line_7" d="M3.516 4.007L0 0" class="cls-2"/>
+                </g>
+                <g id="Group_73">
+                    <g id="Ellipse_5" class="cls-2">
+                        <ellipse cx="6.371" cy="6.383" rx="6.371" ry="6.383"/>
+                        <ellipse cx="6.371" cy="6.383" fill="none" rx="7.371" ry="7.383"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="82.739" viewBox="0 0 190 82.739">
+    <defs>
+        <filter id="9ue6tr3u4a" width="190" height="82.739" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#9ue6tr3u4a)" transform="translate(0 -274) translate(0 274)">
+            <rect width="160" height="52.739" fill="#2b8fff" rx="25" transform="translate(15 10)"/>
+        </g>
+        <text fill="#fff" font-family="Roboto-Bold, Roboto" font-size="12px" font-weight="700" transform="translate(0 -274) translate(95 314)">
+            <tspan x="-9.847" y="0">Yes</tspan>
+        </text>
+    </g>
+</svg>

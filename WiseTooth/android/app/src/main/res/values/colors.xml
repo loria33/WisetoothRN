@@ -1,0 +1,15 @@
+<resources>
+    <color name="bootsplash_background">#2b8fff</color>
+    <color name="transparent">#00000000</color>
+    <!--   color for the app bar and other primary UI elements -->
+    <color name="colorPrimary">#2b8fff</color>
+    <!--   a darker variant of the primary color, used for
+           the status bar (on Android 5.0+) and contextual app bars -->
+    <color name="colorPrimaryDark">#2b8fff</color>
+    <!--   a secondary color for controls like checkboxes and text fields -->
+    <color name="colorAccent">#2b8fff</color>
+
+
+    <color name="status_bar_color">#ffffff</color>
+
+</resources>

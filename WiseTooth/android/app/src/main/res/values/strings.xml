@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WiseTooth</string>
+    <string name="facebook_app_id">393256651941904</string>
+    <string name="server_client_id">132754506953-ob98nv6mh6rc0ktj29i8hrgtop88h2cs.apps.googleusercontent.com</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">7--urA_9ZQkDG2SUvWMSzWOVk1G8IXX1LKdQM</string>
+</resources>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="59" viewBox="0 0 100 59">
+    <defs>
+        <filter id="Rectangle_262" width="100" height="59" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-3{fill:#2b8fff}
+        </style>
+    </defs>
+    <g id="Group_293" transform="translate(15 10)">
+        <g filter="url(#Rectangle_262)" transform="translate(-15 -10)">
+            <rect id="Rectangle_262-2" width="70" height="29" fill="#fff" rx="14.5" transform="translate(15 10)"/>
+        </g>
+        <text id="Filter" fill="#00417c" font-family="Roboto-Light, Roboto" font-size="12px" font-weight="300" transform="translate(37 18)">
+            <tspan x="-13.11" y="0">Filter</tspan>
+        </text>
+        <g id="Group_299" transform="translate(6.833 9)">
+            <path id="Path_111" d="M5.5 0L11 9H0z" class="cls-3" transform="rotate(180 5.5 4.5)"/>
+            <path id="Path_112" d="M0 0h3v3L0 4z" class="cls-3" transform="translate(4 6)"/>
+        </g>
+    </g>
+</svg>

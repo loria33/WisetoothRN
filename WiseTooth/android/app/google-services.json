@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "132754506953",
+    "project_id": "wisetooth-298912",
+    "storage_bucket": "wisetooth-298912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132754506953:android:b924b9411976b872b1f918",
+        "android_client_info": {
+          "package_name": "com.wisetooth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132754506953-ob98nv6mh6rc0ktj29i8hrgtop88h2cs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wisetooth",
+            "certificate_hash": "b1c50bbbc0cd8b8bc9dd95405e45f2890e17303f"
+          }
+        },
+        {
+          "client_id": "132754506953-tpiu2eas77mt2ci2eus5cfe89mgo3onp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqNwRqix2D25IpqGR-GcjBxKcsYYN_l28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132754506953-tpiu2eas77mt2ci2eus5cfe89mgo3onp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

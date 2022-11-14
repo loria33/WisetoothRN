@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="15" viewBox="0 0 29 15">
+    <defs>
+        <style>
+            .cls-4{fill:none}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_303" stroke="#2b8fff" transform="translate(-304 -146)">
+        <g id="Rectangle_269" fill="none" transform="translate(304 146)">
+            <rect width="29" height="15" class="cls-3" rx="5"/>
+            <rect width="28" height="14" x=".5" y=".5" class="cls-4" rx="4.5"/>
+        </g>
+        <g id="Rectangle_268" fill="#2b8fff" transform="translate(318 146)">
+            <rect width="15" height="15" class="cls-3" rx="5"/>
+            <rect width="14" height="14" x=".5" y=".5" class="cls-4" rx="4.5"/>
+        </g>
+    </g>
+</svg>

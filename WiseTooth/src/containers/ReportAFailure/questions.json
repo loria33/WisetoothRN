@@ -1,0 +1,512 @@
+{
+    "SurgeryInformationPlacement": [
+        {
+            "title": "methode",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Manually driven",
+                "Handpiece driven"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "boneQuality",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "I",
+                "II",
+                "III",
+                "IV"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "implantPlacementLevel",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Crestal",
+                "Sub-crsetal"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "placementTime",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Immediate placement",
+                "Immediate delayed",
+                "Delayed placement"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "immediatePlacementCondition",
+            "question": "Mark the appropriate answers and press 'V' to apply.",
+            "answers": [
+                "Keratinized mucosa",
+                "Local chronic infection",
+                "Bone loss in adjacent teeth"
+            ],
+            "type": "comboBox"
+        },
+        {
+            "title": "softTissueBiotype",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Thick",
+                "Thin"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "implantPlacementProtocol",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Single stage",
+                "Two stages"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "torque",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "N-cm"
+            ],
+            "type": "slider"
+        },
+        {
+            "title": "wasPrimaryStabilityAchived",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "ridgeAugmentation",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Particulate",
+                "Block",
+                "Titanium mesh",
+                "Splitting",
+                "NA"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "gtrMembraneUsed",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Resorbable",
+                "Non-resorbable material",
+                "NA"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "materialOfBoneGraftUsed",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Autograft",
+                "Allograft",
+                "Xenograft",
+                "NA"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "sinusFloorElevation",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Internal with implant placement",
+                "Internal without implant placement",
+                "External with implant placement",
+                "External without implant placement"
+            ],
+            "type": "selectBox",
+            "isToSkipCurrentValue": true,
+            "isToAddCustomStyle": true
+        },
+        {
+            "title": "softTissueProcedures",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Free gingival graft",
+                "Connective tissue graft",
+                "NA"
+            ],
+            "type": "selectBox",
+            "isToSkipCurrentValue": true
+        },
+        {
+            "title": "singleStage",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "size",
+                "height"
+            ],
+            "type": "singleStage"
+        }
+    ],
+    "sutureRemovalStageInformation": [
+        {
+            "title": "suturesRemovedBy",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "Full Name"
+            ],
+            "type": "input"
+        },
+        {
+            "title": "sutureRemovalDate",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "date"
+            ],
+            "type": "date"
+        },
+        {
+            "title": "atTheTimeOfSutureRemoval",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Premature exposure of the cover screw",
+                "Post operative infection",
+                "GTR part exposure",
+                "Maxillary sinus complications",
+                "Implant mobility",
+                "Parasthesia Lost cover screw healing cap"
+            ],
+            "type": "selectBox",
+            "isToSkipCurrentValue": true
+        }
+    ],
+    "secondStageSurgeryInformation": [
+        {
+            "title": "secondStagePerformedBy",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "Full Name"
+            ],
+            "type": "input",
+            "isToShowSemiColon": true
+        },
+        {
+            "title": "secondStageDate",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "date"
+            ],
+            "type": "date",
+            "isToShowSemiColon": true
+        },
+        {
+            "title": "softTissueAugmentationNeeded",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Free gingival graft",
+                "Connective tissue graft"
+            ],
+            "type": "selectBox",
+            "isToSkipCurrentValue": true
+        },
+        {
+            "title": "uncoveryTechnique",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Flapless",
+                "With flap technique"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "assessmentOfHygiene",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Excellent",
+                "Good",
+                "Fair",
+                "Poor"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "isqValue",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "N-cm"
+            ],
+            "type": "sliderWithCheckbox",
+            "step": 1
+        },
+        {
+            "title": "healingCap",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "size",
+                "height"
+            ],
+            "type": "slider",
+            "step": 0.5
+        },
+        {
+            "title": "secondStagecondition",
+            "question": "Mark the appropriate answers and press 'V' to apply.",
+            "answers": [
+                "Periodontal disease",
+                "Infection in the implant site",
+                "Exposure of implant threads",
+                "Implant shadow through the mucosa"
+            ],
+            "type": "comboBox",
+            "isToAddCustomStyle": true,
+            "isToSkipCurrentValue": true
+        },
+        {
+            "title": "boneLoss",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "0-2mm",
+                "2-4mm",
+                "4mm"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "manufacturerName",
+            "question": "Fill the following information below.",
+            "answers": [
+                "Name of the Manufacturer"
+            ],
+            "type": "picker",
+            "isToAddCustomInputStyle": true
+        }
+    ],
+    "prostheticStepsInformation": [
+        {
+            "title": "typeOfPlannedProsthesis",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Crown FPD",
+                "Over denture",
+                "Full (upper)",
+                "Full (lower)"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "typeOfOpposingArch",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Natural dentition",
+                "Prosthesis"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "typeOfOpposingProsthesis",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Removable complete",
+                "Removable partial",
+                "Fixed partial",
+                "Natural Tooth"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "TypeOfMaterialOfOpposingProsthesis",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "PFM",
+                "Full ceramic",
+                "Hybrid material"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "dateOfImpression",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "date"
+            ],
+            "type": "date"
+        },
+        {
+            "title": "impressionTechnique",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Open tray",
+                "Closed tray"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "meansOfRetention",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Screw retained",
+                "Cement retained"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "cementationMaterialInformation",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Bar",
+                "Ball",
+                "Locator"
+            ],
+            "type": "selectBox",
+            "isToSkipCurrentValue": true
+        },
+        {
+            "title": "dateFinalRestorationInstalled",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "date"
+            ],
+            "type": "date"
+        },
+        {
+            "title": "recallDoneBy",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "Full Name"
+            ],
+            "type": "input"
+        },
+        {
+            "title": "recallDate",
+            "question": "Fill the following information below and press 'V' to apply.",
+            "answers": [
+                "date"
+            ],
+            "type": "date"
+        },
+        {
+            "title": "assessmentOfHygiene",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Excellent",
+                "Good",
+                "Fair",
+                "Poor"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "boneLoss",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "0-2mm",
+                "2-4mm",
+                "4mm"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "painScore",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "No pain or tenderness upon function",
+                "Pain on function"
+            ],
+            "type": "selectBox",
+            "isToAddCustomStyle": true
+        },
+        {
+            "title": "exudateDischarge",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "No exudate history",
+                "Exudate present"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "StableInflammation",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Mild",
+                "Moderate",
+                "Severe"
+            ],
+            "type": "selectBox",
+            "isSoftTissueCondition": true
+        },
+        {
+            "title": "shadowOfTheImplant",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox",
+            "isSoftTissueCondition": true
+        },
+        {
+            "title": "exposureOfThreads",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "NA",
+                "1-2",
+                "3-4",
+                "5-6"
+            ],
+            "type": "selectBox",
+            "isSoftTissueCondition": true
+        },
+        {
+            "title": "blackTriangles",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox",
+            "isSoftTissueCondition": true
+        },
+        {
+            "title": "bleedingOnProbing",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox",
+            "isSoftTissueCondition": true
+        },
+        {
+            "title": "presenceOfAttachedMucosa",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox",
+            "isSoftTissueCondition": true
+        },
+        {
+            "title": "frenulumNearbye",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox"
+        },
+        {
+            "title": "muscleAttachmentNearbye",
+            "question": "Choose the right assessment.",
+            "answers": [
+                "Yes",
+                "No"
+            ],
+            "type": "selectBox"
+        }
+    ]
+}

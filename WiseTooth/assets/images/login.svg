@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="82.739" viewBox="0 0 360 82.739">
+    <defs>
+        <filter id="m9s9k0prba" width="360" height="82.739" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g>
+            <g filter="url(#m9s9k0prba)" transform="translate(15 9.752) translate(-15 -9.752)">
+                <rect width="330" height="52.739" fill="#00ccd4" rx="25" transform="translate(15 10)"/>
+            </g>
+            <text fill="#fff" font-family="Roboto-Bold, Roboto" font-size="12px" font-weight="700" transform="translate(15 9.752) translate(180 30.248)">
+                <tspan x="-30.035" y="0">Login</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

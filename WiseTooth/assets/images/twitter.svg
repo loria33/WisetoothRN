@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.837" height="64.837" viewBox="0 0 64.837 64.837">
+    <defs>
+        <filter id="cr4i3bfb7a" width="64.837" height="64.837" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g>
+            <g filter="url(#cr4i3bfb7a)" transform="translate(15 12) translate(-15 -12)">
+                <rect width="34.837" height="34.837" fill="#2b8fff" rx="17.418" transform="translate(15 12)"/>
+            </g>
+            <g>
+                <g>
+                    <path fill="#fff" d="M221.009 680.4a8.122 8.122 0 0 1-2.333.639 4.075 4.075 0 0 0 1.787-2.248 8.133 8.133 0 0 1-2.58.986 4.066 4.066 0 0 0-6.923 3.706 11.532 11.532 0 0 1-8.374-4.246 4.068 4.068 0 0 0 1.257 5.424 4.03 4.03 0 0 1-1.84-.509v.051a4.064 4.064 0 0 0 3.259 3.984 4.073 4.073 0 0 1-1.834.07 4.066 4.066 0 0 0 3.8 2.821 8.2 8.2 0 0 1-6.015 1.682A11.554 11.554 0 0 0 219 683.026c0-.176 0-.351-.012-.525a8.237 8.237 0 0 0 2.027-2.1z" transform="translate(15 12) translate(8.027 10.741) translate(-201.207 -678.498)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
