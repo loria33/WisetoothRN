@@ -152,6 +152,10 @@ android {
         checkReleaseBuilds false
     }
 
+     packagingOptions {
+        pickFirst '**/*.so'
+    }
+
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
