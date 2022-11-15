@@ -165,10 +165,10 @@ android {
         }
 
         release {
-	      storeFile file('wise_implant_key_store.keystore')
-	      storePassword 'letmein123'
-	      keyAlias 'wisetooth'
-	      keyPassword 'letmein123'
+	    //   storeFile file('wise_implant_key_store.keystore')
+	    //   storePassword 'letmein123'
+	    //   keyAlias 'wisetooth'
+	    //   keyPassword 'letmein123'
     	}
     }
     buildTypes {
