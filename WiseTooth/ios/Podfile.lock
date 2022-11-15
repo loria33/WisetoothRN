@@ -5,9 +5,10 @@ PODS:
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
   - Base64 (1.1.2)
+  - BEMCheckBox (1.4.1)
   - boost-for-react-native (1.63.0)
-  - BVLinearGradient (2.5.6):
-    - React
+  - BVLinearGradient (2.6.2):
+    - React-Core
   - CocoaAsyncSocket (7.6.5)
   - CodePush (6.4.1):
     - Base64 (~> 1.1)
@@ -43,7 +44,7 @@ PODS:
   - Flipper-Boost-iOSX (1.76.0.1.11)
   - Flipper-DoubleConversion (1.1.7)
   - Flipper-Fmt (7.1.7)
-  - Flipper-Folly (2.6.9):
+  - Flipper-Folly (2.6.10):
     - Flipper-Boost-iOSX
     - Flipper-DoubleConversion
     - Flipper-Fmt (= 7.1.7)
@@ -107,8 +108,8 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - GoogleSignIn (6.1.0):
-    - AppAuth (~> 1.4)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
     - GTMAppAuth (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
   - GTMAppAuth (1.2.2):
@@ -313,7 +314,7 @@ PODS:
   - react-native-image-editor (2.3.0):
     - React
     - React-RCTImage
-  - react-native-image-picker (4.10.0):
+  - react-native-image-picker (4.10.1):
     - React-Core
   - react-native-image-resizer (1.4.5):
     - React-Core
@@ -324,7 +325,7 @@ PODS:
     - React-Core
   - react-native-slider (3.0.3):
     - React
-  - react-native-webview (11.17.2):
+  - react-native-webview (11.23.1):
     - React-Core
   - React-RCTActionSheet (0.63.2):
     - React-Core/RCTActionSheetHeaders (= 0.63.2)
@@ -394,14 +395,15 @@ PODS:
     - React-Core
   - RNCAsyncStorage (1.12.1):
     - React-Core
-  - RNCCheckbox (0.5.12):
+  - RNCCheckbox (0.5.14):
+    - BEMCheckBox (~> 1.4)
     - React-Core
   - RNCMaskedView (0.1.11):
     - React
   - RNGestureHandler (1.10.3):
     - React-Core
-  - RNGoogleSignin (7.2.1):
-    - GoogleSignIn (~> 6.1.0)
+  - RNGoogleSignin (5.0.0):
+    - GoogleSignIn (~> 5.0.0)
     - React-Core
   - RNI18n (2.0.15):
     - React
@@ -409,7 +411,7 @@ PODS:
     - React-Core
   - RNScreens (2.18.1):
     - React-Core
-  - RNSVG (12.3.0):
+  - RNSVG (12.4.4):
     - React-Core
   - RNVectorIcons (7.1.0):
     - React
@@ -498,6 +500,7 @@ SPEC REPOS:
   trunk:
     - AppAuth
     - Base64
+    - BEMCheckBox
     - boost-for-react-native
     - CocoaAsyncSocket
     - FBSDKCoreKit
@@ -629,8 +632,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
+  BVLinearGradient: 34a999fda29036898a09c6a6b728b0b4189e1a44
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   CodePush: 352a7efabd0a7079a1138a5c6f677baedb0dedf9
   DoubleConversion: cde416483dac037923206447da6e1454df403714
@@ -643,14 +647,14 @@ SPEC CHECKSUMS:
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 38631e41ef4f9b12861c67d17cb5518d06badc41
   Flipper-Fmt: 60cbdd92fc254826e61d669a5d87ef7015396a9b
-  Flipper-Folly: 4c7cf530a9038ae25b0fa37e00b00491c467aaea
+  Flipper-Folly: 584845625005ff068a6ebf41f857f468decd26b3
   Flipper-Glog: 1dfd6abf1e922806c52ceb8701a3599a79a200a6
   Flipper-PeerTalk: 116d8f857dc6ef55c7a5a75ea3ceaafe878aadc9
   Flipper-RSocket: d9d9ade67cbecf6ac10730304bf5607266dd2541
   FlipperKit: fb8358107dcb8021a207e5c90facef30ee23b917
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  GoogleSignIn: c90b5bec45e780f54c6a8e1e3c182a86e3dda69d
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GTMAppAuth: ad5c2b70b9a8689e1a04033c9369c4915bfcbe89
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
@@ -671,12 +675,12 @@ SPEC CHECKSUMS:
   react-native-cameraroll: 2957f2bce63ae896a848fbe0d5352c1bd4d20866
   react-native-fbsdk: 00c15d138bba6d4efa628670886fc58cec858c19
   react-native-image-editor: 9361a215c3991cafbe5e7f28cbbad6e72c9c2705
-  react-native-image-picker: 4bc9ed38c8be255b515d8c88babbaf74973f91a8
+  react-native-image-picker: f2ab1215d17bcfe27b0eb6417cc236fd1f4775e7
   react-native-image-resizer: d9fb629a867335bdc13230ac2a58702bb8c8828f
   react-native-login-twitter: f0f71fa99f7ec2cd7578b0982c2ef11a4cc90a03
   react-native-safe-area-context: 9e40fb181dac02619414ba1294d6c2a807056ab9
   react-native-slider: e99fc201cefe81270fc9d81714a7a0f5e566b168
-  react-native-webview: 380c1a03ec94b7ed764dac8db1e7c9952d08c93a
+  react-native-webview: d33e2db8925d090871ffeb232dfa50cb3a727581
   React-RCTActionSheet: 910163b6b09685a35c4ebbc52b66d1bfbbe39fc5
   React-RCTAnimation: 9a883bbe1e9d2e158d4fb53765ed64c8dc2200c6
   React-RCTBlob: 39cf0ece1927996c4466510e25d2105f67010e13
@@ -690,14 +694,14 @@ SPEC CHECKSUMS:
   ReactNativeKeyboardManager: d0e285b82ef60a861d71834d8e996fbc09607a67
   rn-fetch-blob: f065bb7ab7fb48dd002629f8bdcb0336602d3cba
   RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
-  RNCCheckbox: ed1b4ca295475b41e7251ebae046360a703b6eb5
+  RNCCheckbox: 38989bbd3d7d536adf24ba26c6b3e6cefe0bea6f
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
-  RNGoogleSignin: 824ef4924ecb709477fc9f39d6557baeded867c4
+  RNGoogleSignin: ad866d4c4af2651e36801dd3b7771d7715353499
   RNI18n: e2f7e76389fcc6e84f2c8733ea89b92502351fd8
   RNReanimated: c1b56d030d1616239861534d9adb531f8cffab68
   RNScreens: f7ad633b2e0190b77b6a7aab7f914fad6f198d8d
-  RNSVG: 302bfc9905bd8122f08966dc2ce2d07b7b52b9f8
+  RNSVG: ecd661f380a07ba690c9c5929c475a44f432d674
   RNVectorIcons: bc69e6a278b14842063605de32bec61f0b251a59
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
