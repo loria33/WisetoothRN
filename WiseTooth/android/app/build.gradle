@@ -165,7 +165,7 @@ android {
         }
 
         release {
-	      storeFile file('wisetooth_key.keystore')
+	      storeFile file('wise_implant_key_store.keystore')
 	      storePassword 'letmein123'
 	      keyAlias 'wisetooth'
 	      keyPassword 'letmein123'
