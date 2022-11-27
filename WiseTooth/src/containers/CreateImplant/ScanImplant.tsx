@@ -215,6 +215,10 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
         mediaType: 'photo',
       });
      
+      if(data?.didCancel) {
+        this.setState({ loading: false});
+      }
+      else {
       const datURI = data && data.assets && data.assets.length > 0?data.assets[0].uri:" "
       this.setState({ loading: true, cameraDisabled: false });
       this.pauseVideoCapture()
@@ -319,6 +323,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
             });
 
         })
+      }
     }
   };
 
