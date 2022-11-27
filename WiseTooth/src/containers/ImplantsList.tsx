@@ -180,7 +180,8 @@ class ImplantsList extends React.Component<ImplantsListProps, StateProps> {
             colors={[Colors.whiteColor, '#e8e8e8']}
             style={styles.linearGradient}>
               <View style={styles.footer}>
-                <TouchableOpacity onPress={this.goBack} style={[styles.footerContent, { paddingLeft: 30, alignItems: 'center' }]}><Text style={styles.back}>{I18n.t('back')}</Text></TouchableOpacity>
+                {/* <TouchableOpacity onPress={this.goBack} style={[styles.footerContent, { paddingLeft: 30, alignItems: 'center' }]}><Text style={styles.back}>{I18n.t('back')}</Text></TouchableOpacity>
+                 */}
                 <TouchableOpacity onPress={this.navigateToCreateImplantView} style={styles.footerContent}><Add style={{marginTop: 10 }} width={112} height={83} /></TouchableOpacity>
               </View>
           </LinearGradient>
@@ -224,7 +225,7 @@ const styles = StyleSheet.create({
   footer: {
     flexDirection: 'row',
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent:'flex-end',
     alignItems: 'center'
   },
   back: {
