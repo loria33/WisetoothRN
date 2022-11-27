@@ -6,7 +6,7 @@ import Input from '../components/Input';
 import I18n from '../l18n/I18n';
 import { connect } from 'react-redux';
 import LinearGradient from 'react-native-linear-gradient';
-import FaceBookButton from '../components/Buttons/FaceBookButton';
+//import FaceBookButton from '../components/Buttons/FaceBookButton';
 import GoogleButton from '../components/Buttons/GoogleButton';
 import TwitterButton from '../components/Buttons/TwitterButton';
 import LinkedinButton from '../components/Buttons/LinkedinButton';
@@ -22,7 +22,7 @@ import { getStatusBarHeight} from 'react-native-status-bar-height';
 interface LoginProps {
   login: (values: any) => void;
   isLoggingIn: boolean;
-  facebookLogin: (values: any) => void;
+  //facebookLogin: (values: any) => void;
   googleLogin: (values: any) => void;
   linkedinLogin: (values: any) => void;
   twitterLogin: (values: any) => void;
@@ -90,7 +90,6 @@ class Login extends React.Component<LoginProps> {
     const {
       login,
       isLoggingIn,
-      facebookLogin,
       googleLogin,
       linkedinLogin,
       twitterLogin,
@@ -237,7 +236,7 @@ class Login extends React.Component<LoginProps> {
                           {I18n.t('conect')}
                         </Text>
                         <View style={styles.imgContainer}>
-                          <FaceBookButton login={facebookLogin} />
+   
                           <GoogleButton login={googleLogin} />
                           <TwitterButton login={twitterLogin} />
                           <LinkedinButton login={linkedinLogin} />
@@ -366,7 +365,6 @@ const mapStateToProps = (state: { user: { isLoggingIn: any; loggingInError: any;
 });
 export default connect(mapStateToProps, {
   login: userActions.login,
-  facebookLogin: userActions.facebookLogin,
   googleLogin: userActions.googleLogin,
   linkedinLogin: userActions.linkedinLogin,
   twitterLogin: userActions.twitterLogin,

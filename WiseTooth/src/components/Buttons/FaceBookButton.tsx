@@ -10,20 +10,20 @@ interface ButtonProps {
 }
 const FaceBookButton = ({ login }: ButtonProps) => {
   const loginWithFacebook = () => {
-    LoginManager.logOut();
-    LoginManager.logInWithPermissions(['public_profile', 'email']).then(
-      (response: { isCancelled: any; }) => {
-        if (response.isCancelled) {
-        } else {
-          AccessToken.getCurrentAccessToken().then((data: { accessToken: { toString: () => any; }; }) => {
-            login(data.accessToken.toString());
-          });
-        }
-      },
-      (error: string) => {
-        console.log('Login fail with error: ' + error);
-      },
-    );
+    // LoginManager.logOut();
+    // LoginManager.logInWithPermissions(['public_profile', 'email']).then(
+    //   (response: { isCancelled: any; }) => {
+    //     if (response.isCancelled) {
+    //     } else {
+    //       AccessToken.getCurrentAccessToken().then((data: { accessToken: { toString: () => any; }; }) => {
+    //         login(data.accessToken.toString());
+    //       });
+    //     }
+    //   },
+    //   (error: string) => {
+    //     console.log('Login fail with error: ' + error);
+    //   },
+    // );
   };
 
   return (

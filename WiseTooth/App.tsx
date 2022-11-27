@@ -21,7 +21,7 @@ class App extends Component {
         <PersistGate persistor={persistor}>
           <StatusBar translucent backgroundColor={Colors.themeColor} barStyle="light-content" />
           <AppContainer />
-          <FlashMessage position ="bottom"/>
+          
         </PersistGate>
       </Provider>
     );

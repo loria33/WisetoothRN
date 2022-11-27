@@ -2,7 +2,7 @@ import { call, all, takeLatest, put } from 'redux-saga/effects';
 import {
   LOGIN,
   LOGOUT,
-  FACEBOOK_LOGIN,
+  //FACEBOOK_LOGIN,
   GOOGLE_LOGIN,
   LINKEDIN_LOGIN,
   TWITTER_LOGIN,
@@ -25,6 +25,7 @@ function* logoutFlow() {
 function* loginFlow(requestObj: { email: any; password: any; }) {
   try {
     const { email, password } = requestObj;
+    debugger;
     const response = yield call(
       userApi.login,
       email.replace(/\s+/g, ''),
@@ -37,7 +38,7 @@ function* loginFlow(requestObj: { email: any; password: any; }) {
       const { token, user } = response.data;
       yield put(userActions.loginSuccess({ token, isNewUser: false, user }));
     }
-  } catch (err) {
+  } catch (err:any) {
     const { error } = err.response.data;
     const errorObj = typeof error === 'string' ? error : (error.email || error.password)
     yield put(userActions.loginError(errorObj));
@@ -276,7 +277,7 @@ export default function* userSaga() {
   return yield all([
     takeLatest(LOGIN.PENDING, loginFlow),
     takeLatest(LOGOUT.PENDING, logoutFlow),
-    takeLatest(FACEBOOK_LOGIN.PENDING, facebookLoginFlow),
+  //  takeLatest(FACEBOOK_LOGIN.PENDING, facebookLoginFlow),
     takeLatest(GOOGLE_LOGIN.PENDING, googleLoginFlow),
     takeLatest(LINKEDIN_LOGIN.PENDING, linkedinLoginFlow),
     takeLatest(TWITTER_LOGIN.PENDING, twitterLoginFlow),

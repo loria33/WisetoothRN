@@ -22,6 +22,7 @@ buildscript {
 }
 
 allprojects {
+
     repositories {
         mavenLocal()
         google()
@@ -41,5 +42,6 @@ allprojects {
                 force 'com.facebook.android:facebook.android-sdk:4.28.0'
             }
         }
+
     }
 }

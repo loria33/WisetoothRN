@@ -2,7 +2,7 @@ import {
   LOGIN,
   LOGOUT,
   GOOGLE_LOGIN,
-  FACEBOOK_LOGIN,
+ // FACEBOOK_LOGIN,
   LINKEDIN_LOGIN,
   TWITTER_LOGIN,
   FORGOT_PASSWORD,
@@ -30,10 +30,10 @@ export const logout = () => ({ type: LOGOUT.PENDING });
 export const logoutError = (error: string) => ({ type: LOGOUT.ERROR, error });
 export const logoutSuccess = () => ({ type: LOGOUT.SUCCESS });
 
-export const facebookLogin = (accessToken: string) => ({
-  type: FACEBOOK_LOGIN.PENDING,
-  accessToken,
-});
+// export const facebookLogin = (accessToken: string) => ({
+//   type: FACEBOOK_LOGIN.PENDING,
+//   accessToken,
+// });
 export const googleLogin = (accessToken: string) => ({
   type: GOOGLE_LOGIN.PENDING,
   accessToken,

@@ -2,7 +2,7 @@ import createActionSet from '../../utils/action-helper';
 
 export const LOGIN = createActionSet('LOGIN');
 export const LOGOUT = createActionSet('LOGOUT');
-export const FACEBOOK_LOGIN = createActionSet('FACEBOOK_LOGIN');
+//export const FACEBOOK_LOGIN = createActionSet('FACEBOOK_LOGIN');
 export const GOOGLE_LOGIN = createActionSet('GOOGLE_LOGIN');
 export const LINKEDIN_LOGIN = createActionSet('LINKEDIN_LOGIN');
 export const TWITTER_LOGIN = createActionSet('TWITTER_LOGIN');
