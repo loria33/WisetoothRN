@@ -31,7 +31,7 @@ class App extends Component {
 const codePushOptions = { 
   updateDialog: true, 
   installMode: codePush.InstallMode.IMMEDIATE, 
-  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME 
+  checkFrequency: codePush.CheckFrequency.MANUAL 
 }; 
 
 export default codePush(codePushOptions)(App);
