@@ -96,7 +96,7 @@ class ImplantsList extends React.Component<ImplantsListProps, StateProps> {
   }
 
   formatFailureData = (list: any) => {
-     console.log({list})
+     //console.log({list})
      const failedList: { date: any; Patient: any; Installs: any[]; isFailure: boolean; }[] = [];
     const installedList: { date: any; Patient: any; Installs: any[]; isFailure: boolean; }[] = [];
 

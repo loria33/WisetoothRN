@@ -1,4 +1,4 @@
-package com.wisetooth;
+package ai.wiseimplant;
 
 import androidx.multidex.MultiDexApplication;
 
@@ -71,7 +71,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
   // We use reflection here to pick up the class that initializes Flipper,
   // since Flipper library is not available in release mode
   // */
-  // Class<?> aClass = Class.forName("com.wisetooth.ReactNativeFlipper");
+  // Class<?> aClass = Class.forName("ai.wiseimplant.ReactNativeFlipper");
   // aClass
   // .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
   // .invoke(null, context, reactInstanceManager);

@@ -20,8 +20,7 @@ interface RegisterationData {
 }
 
 export const extractLabel = async (image: string) => {
-  console.log({image})
-  console.log(`${apiURL}/implant/extractLabel`)
+ // console.log(`${apiURL}/implant/extractLabel`)
   const token = await AsyncStorage.getItem("jwtToken");
   return RNFetchBlob.fetch(
     'POST',

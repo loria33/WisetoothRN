@@ -175,10 +175,10 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                   ]);
                 }, 100);
               }
-            }, () => {
+            }, (error: any) => {
               this.setState({ loading: false, cameraDisabled: false });
               setTimeout(() => {
-                Alert.alert('', 'Please check your internet connection', [
+                Alert.alert('', 'An error occurred', [
                   {
                     text: 'OK', onPress: this.resumeVideoCapture,
                   },
@@ -329,10 +329,10 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
 
   
    onFinderLayoutMeasured = ({nativeEvent}) => {
-    console.log('height:', nativeEvent.layout.height);
-    console.log('width:', nativeEvent.layout.width);
-    console.log('x:', nativeEvent.layout.x);
-    console.log('y:', nativeEvent.layout.y);
+    // console.log('height:', nativeEvent.layout.height);
+    // console.log('width:', nativeEvent.layout.width);
+    // console.log('x:', nativeEvent.layout.x);
+    // console.log('y:', nativeEvent.layout.y);
   }
 
   render() {

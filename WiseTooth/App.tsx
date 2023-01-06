@@ -7,7 +7,6 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { StatusBar, LogBox } from 'react-native';
 import codePush from "react-native-code-push";
 import { Colors } from './src/styles/StyleSheet'
-import FlashMessage from "react-native-flash-message";
 
 LogBox.ignoreLogs([
   'VirtualizedLists should never be nested',
@@ -20,8 +19,7 @@ class App extends Component {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <StatusBar translucent backgroundColor={Colors.themeColor} barStyle="light-content" />
-          <AppContainer />
-          
+          <AppContainer /> 
         </PersistGate>
       </Provider>
     );
