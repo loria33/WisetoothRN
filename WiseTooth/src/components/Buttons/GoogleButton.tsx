@@ -2,7 +2,7 @@ import React from 'react';
 import {TouchableOpacity} from 'react-native';
 // @ts-ignore
 import Google from '../../../assets/images/google.svg';
-import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
+import {GoogleSignin, statusCodes} from '@react-native-google-signin/google-signin';
 import {googleWebClientId} from '../../config/keys';
 
 GoogleSignin.configure({

@@ -31,8 +31,8 @@
 		7537B3CA1C6B4F2E8737674E /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8128A81CEFA3436E8FB7BA78 /* Roboto-ThinItalic.ttf */; };
 		7C573131F8931D5C44451335 /* libPods-WiseTooth-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 295FFD286DB9B190329A76B4 /* libPods-WiseTooth-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8A91B306296D360A00FB6DF2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A91B305296D360A00FB6DF2 /* GoogleService-Info.plist */; };
 		A8225DF47EA80C1986F4D47B /* libPods-WiseTooth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 350B591DEB77EF627C2951AE /* libPods-WiseTooth.a */; };
-		BEDCE0B2251A12DC00917CA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEDCE0B1251A12DC00917CA3 /* GoogleService-Info.plist */; };
 		BEDCE0B5251CCFA100917CA3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEDCE0B3251CCFA000917CA3 /* Roboto-Bold.ttf */; };
 		BEDCE0B6251CCFA100917CA3 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEDCE0B4251CCFA000917CA3 /* Roboto.ttf */; };
 		EF008A6933A450B4744B4B6F /* libPods-WiseTooth-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C9E336D7A914836CA1A740 /* libPods-WiseTooth-tvOSTests.a */; };
@@ -92,6 +92,7 @@
 		821633314AEA49FCAE980D1E /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		83084B211E2843BDBE29C813 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		836CAFDE7FDE5C73E2F9C8B6 /* Pods-WiseTooth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseTooth.release.xcconfig"; path = "Target Support Files/Pods-WiseTooth/Pods-WiseTooth.release.xcconfig"; sourceTree = "<group>"; };
+		8A91B305296D360A00FB6DF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9355F74D42C247A8A040AA04 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
 		936A92FCEBAD003518EC2FA4 /* Pods-WiseTooth-WiseToothTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseTooth-WiseToothTests.debug.xcconfig"; path = "Target Support Files/Pods-WiseTooth-WiseToothTests/Pods-WiseTooth-WiseToothTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93D02B233290734DB4258DC6 /* Pods-WiseTooth-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseTooth-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WiseTooth-tvOSTests/Pods-WiseTooth-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		B93D3F5396224064A15F155A /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		BA82044E9AEE4D08A36B1411 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		BE19FD63BACEFF1B34FD5FA0 /* libPods-WiseTooth-WiseToothTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WiseTooth-WiseToothTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEDCE0B1251A12DC00917CA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEDCE0B3251CCFA000917CA3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		BEDCE0B4251CCFA000917CA3 /* Roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Roboto.ttf; path = ../assets/fonts/Roboto.ttf; sourceTree = "<group>"; };
 		C10081C3296548C18D814BFB /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		13B07FAE1A68108700A75B9A /* WiseTooth */ = {
 			isa = PBXGroup;
 			children = (
-				BEDCE0B1251A12DC00917CA3 /* GoogleService-Info.plist */,
+				8A91B305296D360A00FB6DF2 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -441,12 +441,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				BEDCE0B5251CCFA100917CA3 /* Roboto-Bold.ttf in Resources */,
-				BEDCE0B2251A12DC00917CA3 /* GoogleService-Info.plist in Resources */,
 				20EA5528D33C494EBCDCD4FD /* Roboto-Black.ttf in Resources */,
 				3BEC378CFF634815A3C0DFA8 /* Roboto-BlackItalic.ttf in Resources */,
 				0E117A3FE17E4EF9B9ABE012 /* Roboto-BoldItalic.ttf in Resources */,
 				18D34FB6FC4B4108A5A523DD /* Roboto-Italic.ttf in Resources */,
 				728B057F09EF401B9A179A40 /* Roboto-Light.ttf in Resources */,
+				8A91B306296D360A00FB6DF2 /* GoogleService-Info.plist in Resources */,
 				0D53BBDF4C414C609F780E00 /* Roboto-LightItalic.ttf in Resources */,
 				26C7027643EC445DA1588A15 /* Roboto-Medium.ttf in Resources */,
 				2D54F0D93AC149D0B8BC1A0E /* Roboto-MediumItalic.ttf in Resources */,
@@ -532,7 +532,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WiseTooth/Pods-WiseTooth-resources.sh",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
@@ -634,7 +634,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WiseTooth-WiseToothTests/Pods-WiseTooth-WiseToothTests-resources.sh",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",

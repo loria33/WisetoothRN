@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "reactron": "adb reverse tcp:9090 tcp:9090",
-    "watchman": "echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches && echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_queued_events && echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances && watchman shutdown-server",
+    "watchman": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache",
     "shake": "adb shell input keyevent 82"
   },
   "dependencies": {
@@ -17,11 +17,11 @@
     "@react-native-community/async-storage": "^1.12.0",
     "@react-native-community/cameraroll": "^4.0.1",
     "@react-native-community/checkbox": "^0.5.5",
-    "@react-native-community/google-signin": "^5.0.0",
     "@react-native-community/image-editor": "^2.3.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/netinfo": "^9.3.6",
     "@react-native-community/slider": "^3.0.3",
+    "@react-native-google-signin/google-signin": "^9.0.2",
     "@react-navigation/drawer": "^5.9.0",
     "@react-navigation/native": "^5.7.4",
     "@react-navigation/stack": "^5.9.0",

@@ -135,7 +135,7 @@ android {
         applicationId "ai.wiseimplant"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
+        versionCode 7
         versionName "1.0"
         multiDexEnabled true
         missingDimensionStrategy 'react-native-camera', 'mlkit'
@@ -164,7 +164,7 @@ android {
             keyPassword 'android'
         }
         release {
-            storeFile file('wisetooth_implant_key_store.keystore')
+           
         }
     }
     buildTypes {

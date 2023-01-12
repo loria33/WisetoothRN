@@ -36,10 +36,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>GoogleSignIn</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.396143875841-he2bkho8j9sjapbp90d11lcqf9l6hqkm</string>
+				<string>com.googleusercontent.apps.608780847830-4gso5f8355lp5gpf6obvbrkd78jobu9f</string>
 			</array>
 		</dict>
 		<dict>
