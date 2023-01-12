@@ -164,7 +164,7 @@ android {
             keyPassword 'android'
         }
         release {
-           
+            storeFile file('wise_implant_key_store.keystore')
         }
     }
     buildTypes {
