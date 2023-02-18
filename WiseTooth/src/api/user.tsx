@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { api as apiURL } from '../config/Backend';
+import { Buffer } from "buffer";
 import { Platform } from 'react-native';
 import RNFetchBlob  from "rn-fetch-blob"
 import AsyncStorage from '@react-native-community/async-storage';
@@ -20,8 +21,32 @@ interface RegisterationData {
 }
 
 export const extractLabel = async (image: string) => {
- // console.log(`${apiURL}/implant/extractLabel`)
+//  // console.log(`${apiURL}/implant/extractLabel`)
+//  debugger;
   const token = await AsyncStorage.getItem("jwtToken");
+//   const body = new FormData();
+//   body.append('image', RNFetchBlob.wrap(image), 'image.jpeg');
+  
+//   fetch(`${apiURL}/implant/extractLabel`, {
+//     method: 'POST',
+//     headers: {
+//       'Authorization': `Bearer ${token}`,
+//       'Content-Type': 'multipart/form-data',
+//       'Content-Disposition': 'form-data; name="image"; filename="image.jpeg"',
+//     },
+//     body,
+//   })  
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log({data})
+//   })
+//   .catch((error) => {
+//     console.log({error})
+//   });
+    
+console.log({image})
+const data = RNFetchBlob.wrap(Platform.OS === 'ios' ? image.replace('file://', '') : image);
+console.log({data})
   return RNFetchBlob.fetch(
     'POST',
     `${apiURL}/implant/extractLabel`,
@@ -32,7 +57,7 @@ export const extractLabel = async (image: string) => {
         name: 'image',
         filename: 'image',
         type: 'image/jpeg',
-        data: RNFetchBlob.wrap(Platform.OS === 'ios' ? image.replace('file://', '') : image),
+        data: data,
       },
     ],
   )

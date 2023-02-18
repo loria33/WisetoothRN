@@ -147,7 +147,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                       text: 'OK', onPress: this.resumeVideoCapture,
                     },
                   ]);
-                }, 100);
+                }, 10000);
               } else if (valJson.implantLabel === "pending") {
                 this.setState({ loading: false, cameraDisabled: false });
                 const implants = [...this.state.implants];
@@ -173,7 +173,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                       text: 'OK', onPress: this.resumeVideoCapture,
                     },
                   ]);
-                }, 100);
+                }, 10000);
               }
             }, (error: any) => {
               this.setState({ loading: false, cameraDisabled: false });
@@ -183,7 +183,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                     text: 'OK', onPress: this.resumeVideoCapture,
                   },
                 ]);
-              }, 100);
+              }, 10000);
 
             }).catch((err) => {
               this.setState({ loading: false, cameraDisabled: false });
@@ -193,7 +193,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                     text: 'OK', onPress: this.resumeVideoCapture,
                   },
                 ]);
-              }, 100);
+              }, 10000);
             });
             // response.uri is the URI of the new image that can now be displayed, uploaded...
             // response.path is the path of the new image
@@ -214,7 +214,6 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
         includeBase64: true,
         mediaType: 'photo',
       });
-     
       if(data?.didCancel) {
         this.setState({ loading: false});
       }
@@ -265,7 +264,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                       text: 'OK', onPress: this.resumeVideoCapture,
                     },
                   ]);
-                }, 100);
+                }, 10000);
               } else if (valJson.implantLabel === "pending") {
                 this.setState({ loading: false, cameraDisabled: false });
                 const implants = [...this.state.implants];
@@ -291,7 +290,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                       text: 'OK', onPress: this.resumeVideoCapture,
                     },
                   ]);
-                }, 100);
+                }, 10000);
               }
             }, () => {
               this.setState({ loading: false, cameraDisabled: false });
@@ -301,7 +300,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                     text: 'OK', onPress: this.resumeVideoCapture,
                   },
                 ]);
-              }, 100);
+              }, 10000);
 
             }).catch((err) => {
               this.setState({ loading: false, cameraDisabled: false });
@@ -311,7 +310,7 @@ class ScanImplant extends Component<ScanImplantProps, ScanImplantState> {
                     text: 'OK', onPress: this.resumeVideoCapture,
                   },
                 ]);
-              }, 100);
+              }, 10000);
             });
             // response.uri is the URI of the new image that can now be displayed, uploaded...
             // response.path is the path of the new image
