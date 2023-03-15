@@ -3,13 +3,13 @@ package ai.wiseimplant;
 import androidx.multidex.MultiDexApplication;
 
 import android.app.Application;
-import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.oblador.vectoricons.VectorIconsPackage;
-import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
+import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
+import com.facebook.react.defaults.DefaultReactNativeHost;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
@@ -17,7 +17,7 @@ import com.microsoft.codepush.react.CodePush;
 
 public class MainApplication extends MultiDexApplication implements ReactApplication {
 
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+  private final ReactNativeHost mReactNativeHost = new DefaultReactNativeHost(this) {
     @Override
     protected String getJSBundleFile() {
       return CodePush.getJSBundleFile();
@@ -42,6 +42,16 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
     protected String getJSMainModuleName() {
       return "index";
     }
+
+    @Override
+    protected boolean isNewArchEnabled() {
+      return BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
+    }
+
+    @Override
+    protected Boolean isHermesEnabled() {
+      return BuildConfig.IS_HERMES_ENABLED;
+    }
   };
 
   @Override
@@ -50,9 +60,16 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
   }
 
   @Override
+  @Override
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+    if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
+      // If you opted-in for the New Architecture, we load the native entry point for
+      // this app.
+      DefaultNewArchitectureEntryPoint.load();
+    }
+    ReactNativeFlipper.initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 
   /**
