@@ -10,6 +10,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import GoogleButton from '../components/Buttons/GoogleButton';
 import TwitterButton from '../components/Buttons/TwitterButton';
 import LinkedinButton from '../components/Buttons/LinkedinButton';
+import AppleButton from '../components/Buttons/AppleButton';
 import * as userActions from '../redux/actions/user';
 // @ts-ignore
 import Logo from '../../assets/images/logo.svg';
@@ -19,6 +20,7 @@ import { CommonActions } from '@react-navigation/native';
 import { Colors } from '../styles/StyleSheet';
 import { getStatusBarHeight} from 'react-native-status-bar-height';
 
+
 interface LoginProps {
   login: (values: any) => void;
   isLoggingIn: boolean;
@@ -26,6 +28,7 @@ interface LoginProps {
   googleLogin: (values: any) => void;
   linkedinLogin: (values: any) => void;
   twitterLogin: (values: any) => void;
+  appleLogin: (values: any) => void;
   loggingInError: string;
   reset: () => void;
   navigation: StackNavigationProp<{
@@ -45,6 +48,8 @@ class Login extends React.Component<LoginProps> {
   constructor(props: any) {
     super(props);
   }
+
+ 
 
   resetForm = () => {
     this.formRef.resetForm({
@@ -93,6 +98,7 @@ class Login extends React.Component<LoginProps> {
       googleLogin,
       linkedinLogin,
       twitterLogin,
+      appleLogin,
       loggingInError,
       reset,
       route,
@@ -240,6 +246,7 @@ class Login extends React.Component<LoginProps> {
                           <GoogleButton login={googleLogin} />
                           <TwitterButton login={twitterLogin} />
                           <LinkedinButton login={linkedinLogin} />
+                          <AppleButton login={appleLogin} />
                         </View>
                       </View>
                     </View>

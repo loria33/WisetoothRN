@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert } from 'react-native';
+import { Alert,Linking } from 'react-native';
 import {
   DrawerContentScrollView,
   DrawerItem,
@@ -31,6 +31,18 @@ class DrawerContent extends React.Component<DrawerContentProps, {}> {
       },
     ]);
   };
+  deleteAccount = () => {
+    Alert.alert('',"Send an Email to delete your account to Info@wiseimplant.com", [
+      {
+        text: 'OK',
+        onPress: () => {
+          Linking.openURL('mailto:support@example.com')
+        },
+      },
+    ]);
+  }
+
+  
 
   render() {
     const props = this.props;
@@ -51,6 +63,10 @@ class DrawerContent extends React.Component<DrawerContentProps, {}> {
         <DrawerItem
           label={I18n.t('logOut')}
           onPress={this.logoutConfirmation}
+        />
+         <DrawerItem
+          label={'Delete Account'}
+          onPress={this.deleteAccount}
         />
       </DrawerContentScrollView>
     );

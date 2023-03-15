@@ -1,5 +1,5 @@
-import React, {Component,Fragment} from 'react';
-import {View, Text, KeyboardAvoidingView, SafeAreaView,Keyboard} from 'react-native';
+import React, {Component,Fragment,useCallback} from 'react';
+import {View, Text,Linking, KeyboardAvoidingView, SafeAreaView,Keyboard,Alert} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {Formik} from 'formik';
 import Input from '../../components/Input';
@@ -26,7 +26,7 @@ interface Inputs {
   password: any;
   verifyPassword: any;
 }
-
+const urlTerms='https://wiseimplant.tech/?page_id=1559';
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
@@ -77,6 +77,8 @@ class Account extends Component<AccountProps> {
     super(props);
     this.onSubmit = this.onSubmit.bind(this);
     this.goBack = this.goBack.bind(this);
+    this.termsAndConditions = this.termsAndConditions.bind(this);
+    
   }
 
   onSubmit(values: any) {
@@ -87,6 +89,21 @@ class Account extends Component<AccountProps> {
       verifyPassword: values.verifyPassword
     });
   }
+
+  
+    async termsAndConditions () {
+      // Checking if the link is supported for links with custom URL scheme.
+      const supported = await Linking.canOpenURL(urlTerms);
+  
+      if (supported) {
+        // Opening the link with some app, if the URL scheme is "http" the web link should be opened
+        // by some browser in the mobile
+        await Linking.openURL(urlTerms);
+      } else {
+        Alert.alert(`Don't know how to open this URL: ${urlTerms}`);
+      }
+    }
+  
 
   goBack() {
     this.props.navigation.goBack();
@@ -211,7 +228,14 @@ class Account extends Component<AccountProps> {
                         iconType="material-community"
                         hideErrorMsg={false}
                       />
+                       <TouchableOpacity onPress={this.termsAndConditions} style={{justifyContent:'center',alignItems:'center'}}>
+                        <View style={{flexDirection:'row'}}>
+                           <Text>By tapping </Text><Text style={{fontWeight:'800'}}>Next</Text><Text> you are agreeing to the </Text>
+                        </View>
+                      <Text  style={{fontWeight:'800',textDecorationLine: 'underline',paddingTop:10}}>Terms & Conditions</Text>
+                    </TouchableOpacity>
                     </View>
+                   
                     <View style={Styles.bottomsRow}>
                       <TouchableOpacity onPress={this.goBack}>
                           <Text style={Styles.back}> {I18n.t("back")} </Text>

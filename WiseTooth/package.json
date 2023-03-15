@@ -13,6 +13,7 @@
     "shake": "adb shell input keyevent 82"
   },
   "dependencies": {
+    "@invertase/react-native-apple-authentication": "^2.2.2",
     "@ptomasroos/react-native-multi-slider": "^2.2.2",
     "@react-native-community/async-storage": "^1.12.0",
     "@react-native-community/cameraroll": "^4.0.1",
@@ -21,6 +22,8 @@
     "@react-native-community/masked-view": "^0.1.10",
     "@react-native-community/netinfo": "^9.3.6",
     "@react-native-community/slider": "^3.0.3",
+    "@react-native-firebase/app": "^17.3.1",
+    "@react-native-firebase/auth": "^17.3.1",
     "@react-native-google-signin/google-signin": "^9.0.2",
     "@react-navigation/drawer": "^5.9.0",
     "@react-navigation/native": "^5.7.4",

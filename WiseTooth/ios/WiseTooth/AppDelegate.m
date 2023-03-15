@@ -6,6 +6,7 @@
 #import <RNGoogleSignin/RNGoogleSignin.h>
 #import <TwitterKit/TWTRKit.h>
 #import <CodePush/CodePush.h>
+#import <Firebase.h>
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -50,7 +51,10 @@ static void InitializeFlipper(UIApplication *application) {
   
   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil];
   rootView.loadingView = [[storyboard instantiateInitialViewController] view];
-  
+  if ([FIRApp defaultApp] == nil) {
+       [FIRApp configure];
+     }
+
   [[FBSDKApplicationDelegate sharedInstance] application:application
   didFinishLaunchingWithOptions:launchOptions];
   [[Twitter sharedInstance] startWithConsumerKey:@"i0izsdGK5r6NWI42g08YdIyev" consumerSecret:@"Ssl0m5FNGn80Igpre5l3rL9VLfVmGkTBF16ZE2KxfOGYhV3OoW"];
