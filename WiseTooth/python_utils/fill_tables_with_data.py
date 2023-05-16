@@ -48,19 +48,17 @@ class database_handler():
     
 
     def write_fake_data(self):
-        implant_lbl_id = 7001
-        manufacturerModel_id = 9001
-        implant_id = 8001
-        inastall_id = 13001
+        
+        manufacturerModel_id = 1
         user_id = 195
-        patient_id = 10001
-        visit_id = 11001
-        q_id = 12001
+
+
         patient_age = 53
         patient_gender = 'male'
         patient_name ='dffdsgfdsgsgsdf'
         q_type = 'failure'
         tooth_num = 23
+        answer_dict = '{"surgeryInformationPlacement":{"methode":"Manually driven","immediatePlacementCondition":["Local chronic infection"],"boneQuality":"II","implantPlacementLevel":"Sub-crsetal","placementTime":"Delayed placement","softTissueBiotype":"Thin","implantPlacementProtocol":"Two stages","wasPrimaryStabilityAchived":"Yes","ridgeAugmentation":"Block","gtrMembraneUsed":"Non-resorbable material","materialOfBoneGraftUsed":"NA","sinusFloorElevation":"Internal without implant placement","softTissueProcedures":"Connective tissue graft","torque":"56","singleStage":""},"sutureRemovalStageInformation":{"suturesRemovedBy":"mr a","atTheTimeOfSutureRemoval":"Maxillary sinus complications","sutureRemovalDate":"2023-04-24"},"secondStageSurgeryInformation":{"secondStagePerformedBy":"mr b","secondStageDate":"2023-04-29","softTissueAugmentationNeeded":"Connective tissue graft","uncoveryTechnique":"With flap technique","assessmentOfHygiene":"Good","isqValue":"0","healingCap":{"size":"5","height":"6"},"secondStagecondition":["Exposure of implant threads"],"boneLoss":"2-4mm","manufacturerName":"Paltop"},"prostheticStageConfirmQuestion":"yes","prostheticStepsInformation":\{\}}'
         # Current datetime
         now = datetime.now()
         # Format datetime
@@ -75,28 +73,56 @@ class database_handler():
 
 
         self.cursor.execute(
-            "INSERT INTO ImplantLabels (id, label, imagePath, imageUrl, implantId, userId, length, diameter, manufacturerModelId, lot, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-            (implant_lbl_id, None, '', '', implant_id, user_id, 2.0, 2.0, manufacturerModel_id, 'Z', formatted_now, formatted_now))
+            "INSERT INTO Implants (createdAt, updatedAt) VALUES (%s, %s)",
+            (formatted_now, formatted_now))
+        
+        self.connection.commit()
+        implant_id = self.cursor.lastrowid
+        print(implant_id)
 
         self.cursor.execute(
-            "INSERT INTO Implants (id, createdAt, updatedAt) VALUES (%s, %s, %s)",
-            (implant_id, formatted_now, formatted_now))
+            "INSERT INTO ImplantLabels (label, imagePath, imageUrl, implantId, userId, length, diameter, manufacturerModelId, lot, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+            (None, '', '', implant_id, user_id, 2.0, 2.0, manufacturerModel_id, 'Z', formatted_now, formatted_now))
+
+        self.connection.commit()
+        implant_lbl_id = self.cursor.lastrowid
+        print(implant_lbl_id)
+
+       
 
         self.cursor.execute(
-            "INSERT INTO Patients (id, age, gender, name, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s, %s)",
-            (patient_id, patient_age, patient_gender, patient_name, formatted_now, formatted_now))
+            "INSERT INTO Patients (age, gender, name, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s)",
+            (patient_age, patient_gender, patient_name, formatted_now, formatted_now))
+
+        self.connection.commit()
+        patient_id = self.cursor.lastrowid
+        print(patient_id)
 
         self.cursor.execute(
-            "INSERT INTO Visits (id, patientId, userId, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s)",
-            (visit_id, patient_id, user_id, formatted_now, formatted_now))
+            "INSERT INTO Visits (patientId, userId, createdAt, updatedAt) VALUES (%s, %s, %s, %s)",
+            (patient_id, user_id, formatted_now, formatted_now))
+        
+        self.connection.commit()
+        visit_id = self.cursor.lastrowid
+        print(visit_id)
 
         self.cursor.execute(
-            "INSERT INTO Questionaires (id, questionaireType, installId, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s)",
-            (q_id, q_type, install_id, formatted_now, formatted_now))
+            "INSERT INTO Installs (implantId, visitId, toothNum, createdAt, updatedAt) VALUES ( %s, %s, %s, %s, %s)",
+            (implant_id, visit_id, tooth_num, formatted_now, formatted_now))
+        
+        self.connection.commit()
+        install_id = self.cursor.lastrowid
+        print(install_id)
 
         self.cursor.execute(
-            "INSERT INTO Installs (id, implantId, visitId, toothNum, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s, %s)",
-            (install_id, implant_id, visit_id, tooth_num, formatted_now, formatted_now))
+            "INSERT INTO Questionaires (questionaireType, answers, installId, createdAt, updatedAt) VALUES (%s, %s, %s, %s, %s)",
+            (q_type, answer_dict, install_id, formatted_now, formatted_now))
+        
+        self.connection.commit()
+        q_id = self.cursor.lastrowid
+        print(q_id)
+
+        
 
     
     def print_data(self, table_name):
@@ -111,7 +137,7 @@ class database_handler():
         cnt = 0
         for row in result:
             cnt += 1
-            if cnt == 1:
+            if cnt == 10:
                 break
             print(row)
             print("\n")
